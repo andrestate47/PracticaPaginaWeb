@@ -1,46 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylee.css">
 </head>
-<body>
-    <header>
-        <h1>Nombre</h1>
-        <h2>Curriculum vitae</h2>
-        <img src="imagenes cv/cvpapa.png.webp"  alt="">
-    </header>
-    <section>
-        <article>
-            <h2>Mi Perfil</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde illo quod nobis ex maiores ipsum, consectetur adipisci sequi eum excepturi?</p>
-        </article>
-
-        <article>
-            <h2>Mi experiencia</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde illo quod nobis ex maiores ipsum, consectetur adipisci sequi eum excepturi?</p>
-        </article>
-
-        <article>
-            <h2>Mi formacion</h2>
+<body>  
+    <div class="hero">
+        <nav>
+            <img src="imagenes/menu.png" class="menu-img">
+            <img src="imagenes/logo.png" class="logo-img">
             <ul>
-                <li>curso perforacion</li>
-                <li>curso petroleo</li>
-                <li>curso fluidos</li>
+             <li><a href="">latest</a></li>
+             <li><a href="">Modern</a></li>
+             <li><a href="">Contemporany</a></li>
+             <li><a href="">Affordable</a></li>
             </ul>
-        </article>
-
-    </section>
-    <footer>
-        <p>Lorem ipsum dolor,<a href="#">tlf:0424-888-88-88</a> sit amet consectetur adipisicing elit. Voluptatum quis deserunt cum quod earum placeat a consequuntur id eaque, iure quo consequatur quia dignissimos porro, soluta, veniam quasi rem quibusdam.</p>
-    </footer>
-
-    
+            <button type="botton" onclick="toggleBtn()" id="btn"><span></span></button>
 
 
-    
+        </nav>
+        <div class="lamp-container">
+            <img src="imagenes/lamp.png" class="lamp">
+            <img src="imagenes/light.png" class="ligth" id="ligth">
+        </div>
+        
+        <div class="text-container">
+            <h1>lates <br> in ligthing</h1>
+            <p>
+                this is the first lamp fron our company. we are making a huge collection of modern lamps in all categories fromhome use to office use.
+            </p>
+            <a href="">check all collection</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById("btn")
+        var ligth = document.getElementById("ligth")
+        
+        function toggleBtn(){
+            btn.classList.toggle("active")
+            ligth.classList.toggle("on")
+
+
+        }
+    </script>
 </body>
 </html>
